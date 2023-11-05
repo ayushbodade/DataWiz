@@ -8,16 +8,18 @@ import "../../../index.css";
 import "../../Header/Header.css";
 import HeroSignIn from "./HeroSignIn";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [user, setUser] = useState();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    signInWithPopup(auth, provider).then((data) => {
-      setUser(data.user.email);
-      console.log(data)
-      localStorage.setItem("email", data.user.email);
-    });
+    navigate("/register");
+  };
+
+  const handleLogin = () => {
+    navigate("/login");
   };
 
   useEffect(() => {
@@ -37,7 +39,7 @@ const SignIn = () => {
                   display: "flex",
                   height: "100vh",
                   background: "black",
-                  padding:'4rem'
+                  padding: "4rem",
                 }}
               >
                 <div className="white-gradient" />
@@ -88,7 +90,8 @@ const SignIn = () => {
                         voluptatem accusantium.
                       </span>
                     </div>
-                    <button onClick={handleClick}> Sign in with Google</button>
+                    <button onClick={handleClick}> Register</button>
+                    <button onClick={handleLogin}> Login</button>
                   </div>
                 </div>
                 <div className="flexCenter hero-right">

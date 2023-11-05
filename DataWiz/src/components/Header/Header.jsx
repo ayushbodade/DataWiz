@@ -12,11 +12,18 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="h-wrapper" style={{ background: '#131110' }}>
+    <section className="h-wrapper" style={{ background: "#131110" }}>
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
         <div>
-        <img className='hacker' onClick={() => navigate('/')} src="./datawizlogo.png" alt="logo" width={170} style={{position:"absolute",top:-45,left:100}} />
+          <img
+            className="hacker"
+            onClick={() => navigate("/")}
+            src="./datawizlogo.png"
+            alt="logo"
+            width={170}
+            style={{ position: "absolute", top: -45, left: 100 }}
+          />
         </div>
         {/* menu */}
         <OutsideClickHandler
@@ -29,12 +36,16 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <a onClick={() => navigate('/')} href="#value">Our Value</a>
+            <a onClick={() => navigate("/")} href="#value">
+              Our Value
+            </a>
             <a onClick={() => navigate("/gptBanker")}>GPTBanker</a>
             <a onClick={() => navigate("/autoMl")}>AutoML</a>
-            <a onClick={() => navigate('/')} href="#contact-us">Contact Us</a>
+            <a onClick={() => navigate("/")} href="#contact-us">
+              Contact Us
+            </a>
             <button className="button">
-              <a onClick={() => navigate('/driveAgm')}>Drive</a>
+              <a onClick={() => navigate("/driveAgm")}>Drive</a>
             </button>
           </div>
         </OutsideClickHandler>

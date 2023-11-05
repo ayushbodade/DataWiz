@@ -8,6 +8,7 @@ const Drive = () => {
     localStorage.clear();
     window.location.reload();
   };
+
   return (
     <>
       <div>

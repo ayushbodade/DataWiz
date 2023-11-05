@@ -35,3 +35,16 @@ exports.uploadFile = async (req, res, next) => {
     });
   }
 };
+
+exports.login = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+    let user = await User.findOne({ email });
+    if (!user) {
+      throw new Error("Email not found!");
+    }
+    if (password === user.password) {
+      sendToken(user, 201, res);
+    }
+  } catch (err) {}
+};

@@ -9,9 +9,9 @@ PORT = 5000;
 const app = express();
 app.use(fileUpload({ useTempFiles: true }));
 const corsOpts = {
-  origin: "*",
+  origin: "http://localhost:5173",
   credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  optionSuccessStatus: 200
 };
 app.use(cors(corsOpts));
 app.use(cookieParser());
@@ -21,7 +21,7 @@ app.use(express.json());
 const userRoutes = require("./routes/user");
 app.use("/user", userRoutes);
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("Server running on port ", PORT);
   connectDatabase();
 });

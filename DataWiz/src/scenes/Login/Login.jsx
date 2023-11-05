@@ -1,10 +1,8 @@
 import { React, useState } from "react";
-import "./register.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Register = () => {
-  const [username, setUsername] = useState("");
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -13,9 +11,8 @@ const Register = () => {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:5000/user/register",
+        "http://localhost:5000/user/login",
         {
-          username,
           email,
           password,
         },
@@ -29,19 +26,8 @@ const Register = () => {
   };
   return (
     <div className="container">
-      <div className="heading">Create your account</div>
+      <div className="heading">SignIn to your account</div>
       <form action="" className="form" onSubmit={handleSubmit}>
-        <div className="input-field">
-          <input
-            id="username"
-            name="text"
-            type="text"
-            autoComplete="off"
-            required=""
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <label for="username">Full Name</label>
-        </div>
         <div className="input-field">
           <input
             id="email"
@@ -66,7 +52,7 @@ const Register = () => {
         </div>
         <div className="btn-container">
           <button className="btn" type="submit">
-            Create Account
+            Sign In
           </button>
         </div>
       </form>
@@ -74,4 +60,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Login;

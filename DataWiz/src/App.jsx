@@ -7,6 +7,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import SignIn from "./components/Drive/Auth/SignIn";
 import Header from "./components/Header/Header";
 import Register from "./scenes/Register/Register";
+import Login from "./scenes/Login/Login";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/gptBanker" element={<GptBanker />} />
           <Route path="/driveAgm" element={<SignIn />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
