@@ -17,7 +17,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/autoMl" element={<AutoML />} />
-          <Route path="/gptBanker" element={<GptBanker />} />
           <Route path="/driveAgm" element={<SignIn />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
