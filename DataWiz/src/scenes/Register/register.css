@@ -1,10 +1,16 @@
 .container {
     border: solid 1px #8d8d8d;
-    padding: 20px;
+    margin-top: 175px;
+    margin-left: 550px;
+    padding: 80px;
     border-radius: 20px;
     background-color: #fff;
+    width:fit-content;
+
   }
   
+  
+
   .container .heading {
     font-size: 1.3rem;
     margin-bottom: 20px;

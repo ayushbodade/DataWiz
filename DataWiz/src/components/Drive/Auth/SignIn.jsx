@@ -6,7 +6,6 @@ import "./SignIn.css";
 import "../../../App.css";
 import "../../../index.css";
 import "../../Header/Header.css";
-import HeroSignIn from "./HeroSignIn";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
