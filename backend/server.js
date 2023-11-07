@@ -5,11 +5,11 @@ const connectDatabase = require("./utils/connectDB");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
 
-PORT = 5000;
+PORT = 8080;
 const app = express();
 app.use(fileUpload({ useTempFiles: true }));
 const corsOpts = {
-  origin: "http://localhost:5173",
+  origin: "*",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200
 };
