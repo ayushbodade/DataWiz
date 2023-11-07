@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:5000/user/register",
+        "https://data-wiz-server.vercel.app/user/register",
         {
           username,
           email,

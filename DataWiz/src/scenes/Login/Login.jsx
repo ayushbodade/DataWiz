@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     axios
       .post(
-        "http://localhost:5000/user/login",
+        "https://data-wiz-server.vercel.app/user/login",
         {
           email,
           password,
