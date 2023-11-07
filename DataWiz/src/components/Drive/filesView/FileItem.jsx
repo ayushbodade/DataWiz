@@ -1,6 +1,7 @@
 import React from 'react'
-import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+// import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import './FileItem.css'
+import {HiDocument} from 'react-icons/hi'
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -22,7 +23,7 @@ const FileItem = ({ id, caption, timestamp, fileUrl, size }) => {
         <div className='fileItem'>
             <a href={fileUrl} target="_blank" download>
                 <div className="fileItem--left">
-                    <InsertDriveFileIcon />
+                    <HiDocument />
                     <p>{caption}</p>
                 </div>
                 <div className="fileItem--right">

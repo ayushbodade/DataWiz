@@ -18,3 +18,11 @@
 .newFile__container>p{
     margin-left: 14px;
 }
+.form_class{
+    position: absolute;
+    width: 400;
+    background-color: white;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    }

@@ -1,14 +1,16 @@
 import React from 'react'
 import './FileCard.css'
+import {HiDocument} from 'react-icons/hi'
 
-import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+// import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 const FileCard = ({ name }) => {
     return (
         <div className='fileCard'>
-            <div className="fileCard--top">
+            {/* <div className="fileCard--top">
                 <InsertDriveFileIcon style={{ fontSize: 130 }} />
-            </div>
+            </div> */}
+            <HiDocument style={{ fontSize: 150}} />
 
             <div className="fileCard--bottom">
                 <p>{name}</p>

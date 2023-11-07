@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
+// import AddIcon from "@material-ui/icons/Add";
 import "./NewFile.css";
 // import firebase from '../../../firebase'
 import { storage, db } from "../../../firebase";
 import { ref, uploadBytes, getDownloadURL, listAll } from "firebase/storage";
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@mui/material/Modal";
 import * as firebase from "firebase/app";
 import { addDoc, collection } from "firebase/firestore";
@@ -20,19 +20,19 @@ function getModalStyle() {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    position: "absolute",
-    width: 400,
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   paper: {
+//     position: "absolute",
+//     width: 400,
+//     backgroundColor: theme.palette.background.paper,
+//     border: "2px solid #000",
+//     boxShadow: theme.shadows[5],
+//     padding: theme.spacing(2, 4, 3),
+//   },
+// }));
 
 const NewFile = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   const [modalStyle] = useState(getModalStyle);
 
@@ -103,7 +103,7 @@ const NewFile = () => {
   return (
     <div className="newFile">
       <div className="newFile__container" onClick={handleOpen}>
-        <AddIcon />
+        {/* <AddIcon /> */}
         <p>New</p>
       </div>
       <Modal
@@ -114,7 +114,7 @@ const NewFile = () => {
       >
         <form
           style={modalStyle}
-          className={classes.paper}
+          className="form_class"
           onSubmit={handleUpload}
         >
           <p>Select files you want to upload!</p>
