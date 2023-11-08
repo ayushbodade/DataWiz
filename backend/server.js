@@ -9,9 +9,10 @@ PORT = 8080;
 const app = express();
 app.use(fileUpload({ useTempFiles: true }));
 const corsOpts = {
-  origin: "*",
+  origin:
+    "https://data-wiz-client-440so6do6-utsav-s-projects-c7111ee5.vercel.app/",
   credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200
+  optionSuccessStatus: 200,
 };
 app.use(cors(corsOpts));
 app.use(cookieParser());
