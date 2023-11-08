@@ -22,7 +22,7 @@
                 },
                 {
                     "key": "Access-Control-Allow-Origin",
-                    "value": "*"
+                    "value": "https://data-wiz-client-440so6do6-utsav-s-projects-c7111ee5.vercel.app/"
                 },
                 {
                     "key": "Access-Control-Allow-Methods",
