@@ -10,6 +10,7 @@ const app = express();
 app.use(fileUpload({ useTempFiles: true }));
 const corsOpts = {
   origin: "https://data-wiz-client.vercel.app",
+  methods: ["POST"],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };

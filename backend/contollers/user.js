@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const User = require("../Models/user");
 const sendToken = require("../utils/sendToken");
 const { authorize } = require("../utils/Oauth");
