@@ -22,6 +22,10 @@ app.use(express.json());
 const userRoutes = require("./routes/user");
 app.use("/user", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Server is running...");
+});
+
 app.listen(PORT, () => {
   console.log("Server running on port ", PORT);
   connectDatabase();
