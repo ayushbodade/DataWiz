@@ -11,12 +11,12 @@ const Login = () => {
     e.preventDefault();
     axios
       .post(
-        "https://data-wiz-server.vercel.app/user/login",
+        "http://localhost:8080/user/login",
         {
           email,
           password,
         },
-        { withCredentials: false }
+        { withCredentials: true }
       )
       .then(({ data }) => {
         localStorage.setItem("email", email);
