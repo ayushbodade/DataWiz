@@ -16,7 +16,7 @@ const Login = () => {
           email,
           password,
         },
-        { withCredentials: true }
+        { withCredentials: false }
       )
       .then(({ data }) => {
         localStorage.setItem("email", email);
