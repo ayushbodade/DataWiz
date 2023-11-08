@@ -39,8 +39,8 @@ const Header = () => {
             <a onClick={() => navigate("/")} href="#value">
               Our Value
             </a>
-            <a href='https://citl-gpt-banker-deployment.onrender.com/' target="_blank">GPTBanker</a>
-            <a onClick={() => navigate("/autoMl")}>AutoML</a>
+            <a href='https://citl-gpt-banker-deployment.onrender.com/'>GPTBanker</a>
+            <a href='https://cd10-2405-201-1e-5089-e0eb-a88c-de4-466.ngrok-free.app/'>AutoML</a>
             <a onClick={() => navigate("/")} href="#contact-us">
               Contact Us
             </a>

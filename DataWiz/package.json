@@ -1,6 +1,7 @@
 {
   "name": "datawiz",
   "private": true,
+  "proxy": "https://data-wiz-server.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

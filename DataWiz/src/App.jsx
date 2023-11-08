@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/autoMl" element={<AutoML />} />
+          {/* <Route path="/autoMl" element={<AutoML />} /> */}
           <Route path="/driveAgm" element={<SignIn />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
